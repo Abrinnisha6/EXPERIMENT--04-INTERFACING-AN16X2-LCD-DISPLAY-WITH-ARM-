@@ -1,9 +1,16 @@
 # EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM AND DISPLAY STRING
 
 
- ## Aim: To Interface a 16X2 LCD display to ARM controller  , and simulate it in Proteus 
-## Components required: STM32 CUBE IDE, Proteus 8 simulator .
-## Theory 
+## Aim :
+
+To Interface a 16X2 LCD display to ARM controller , and simulate it in Proteus.
+
+## Components required :
+
+STM32 CUBE IDE, Proteus 8 simulator.
+
+## Theory :
+
 The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
 What is an ARM7 Processor?
@@ -16,9 +23,10 @@ interfaces Datasheet - production data Features
 • Memories – Up to 256 Kbytes of Flash memory – Up to 64 Kbytes of SRAM
 
 
-   ## LCD 16X2 
-   16×2 LCD is named so because; it has 16 Columns and 2 Rows. There are a lot of combinations available like,
-   8×1, 8×2, 10×2, 16×1, etc. But the most used one is the 16*2 LCD, hence we are using it here.
+## LCD 16X2 :
+
+ 16×2 LCD is named so because; it has 16 Columns and 2 Rows. There are a lot of combinations available like,
+ 8×1, 8×2, 10×2, 16×1, etc. But the most used one is the 16*2 LCD, hence we are using it here.
 
 All the above mentioned LCD display will have 16 Pins and the programming approach is also the same and hence the choice is left to you. 
 Below is the Pinout and Pin Description of 16x2 LCD Module:
@@ -114,7 +122,8 @@ C2
 
 Jump to second line, position 2
  
-## Procedure:
+## Procedure :
+
  1. click on STM 32 CUBE IDE, the following screen will appear 
  ![image](https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png)
 
@@ -168,21 +177,39 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 ![image](https://user-images.githubusercontent.com/36288975/233856904-99eb708a-c907-4595-9025-c9dbd89b8879.png)
 
-## CIRCUIT DIAGRAM 
+## CIRCUIT DIAGRAM :
+
 ![image](https://user-images.githubusercontent.com/36288975/233857974-bda6200e-4f88-4e7b-b189-4da80210fa23.png)
 
 
 ## STM 32 CUBE PROGRAM :
 
+```
+#include "main.h"
+#include "lcd.h"
+ MX_GPIO_Init();
+  Lcd_PortType ports[] = {GPIOA,GPIOA,GPIOA,GPIOA};
+  Lcd_PinType pins[] = {GPIO_PIN_3,GPIO_PIN_2,GPIO_PIN_1,GPIO_PIN_0};
+  Lcd_HandleTypeDef lcd;
+  lcd = Lcd_create(ports,pins,GPIOB,GPIO_PIN_0,GPIOB,GPIO_PIN_1,LCD_4_BIT_MODE);
+  Lcd_cursor(&lcd, 0,0);
+  Lcd_string(&lcd," CYBER SECURITY");
 
+  Lcd_cursor(&lcd, 1,0);
+  Lcd_string(&lcd," PAVITHRA  M");
+```
 
+## Output screen shots of proteus :
 
-## Output screen shots of proteus  :
+![o1](https://github.com/Abrinnisha6/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118889454/489b4a59-e997-4ead-94e7-80513b47175e)
+
  
- 
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+ ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE) :
+
+ ![o2](https://github.com/Abrinnisha6/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118889454/95022180-2d97-452e-9790-581c1eae7288)
+
  
 ## Result :
+
 Interfacing a lcd display with ARM microcontroller are simulated in proteus and the results are verified.
 
