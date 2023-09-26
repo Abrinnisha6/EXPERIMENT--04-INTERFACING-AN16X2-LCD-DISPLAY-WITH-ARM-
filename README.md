@@ -218,12 +218,12 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 ## Output screen shots of proteus :
 
-![o1](https://github.com/Abrinnisha6/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118889454/489b4a59-e997-4ead-94e7-80513b47175e)
+![pcm1](https://github.com/Abrinnisha6/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118889454/04fd184f-3643-409e-b921-c1a49882cb9b)
 
- 
+
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE) :
 
- ![o2](https://github.com/Abrinnisha6/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118889454/95022180-2d97-452e-9790-581c1eae7288)
+![Screenshot 2023-09-26 081437](https://github.com/Abrinnisha6/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118889454/aa56e99e-fd64-4d9d-a0eb-04eca858e5ff)
 
  
 ## Result :
